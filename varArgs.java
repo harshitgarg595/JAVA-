@@ -18,7 +18,7 @@ public class Main {
 
 
 
-// when one more arguments are requried to execution 
+// when one more arguments are compulsory requried to execution 
 package com.company;
 import java.util.Scanner;
 public class Main {
