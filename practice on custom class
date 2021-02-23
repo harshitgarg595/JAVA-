@@ -1,0 +1,32 @@
+package com.company;
+import java.util.Scanner;
+class employee{
+    int salary;
+    String name;
+    public int getSalary(){
+        System.out.println("the salary of given person is"+salary);
+        return salary;
+    }
+    public String getName(){
+        System.out.println("the name of given person is"+name);
+        return name;
+    }
+    public String  setName(String n){
+        name= n;
+        System.out.println("new name is "+n);
+        return n;
+
+
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        employee harshit=new employee();
+        harshit.salary=54000;
+        harshit.name="Garg";
+        harshit.getSalary();
+        harshit.setName("GARG");
+        harshit.getName();
+
+    }
+}
