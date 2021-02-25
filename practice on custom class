@@ -1,6 +1,42 @@
 package com.company;
 import java.util.Scanner;
-class employee{
+class circle{
+    float r;
+    public float area()
+    {
+     return (float) (3.14*r*r);
+    }
+    public float perimeter ()
+    {
+        return (float) (3.14*2*r);
+    }
+
+}
+class rectangle {
+    public int area(int l, int b) {
+        return l * b;
+    }
+
+    public int perimeter(int l, int b) {
+        return 2*l + 2*b;
+    }
+}
+class square{
+    int side;
+    public int parameter(){
+
+        return side*4;
+    }
+    public int area(){
+
+        return side*side;
+    }
+}
+class cellphone{
+    public String call(String type){
+        return type;
+    }
+}class employee{
     int salary;
     String name;
     public int getSalary(){
@@ -19,6 +55,7 @@ class employee{
 
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         employee harshit=new employee();
@@ -27,6 +64,21 @@ public class Main {
         harshit.getSalary();
         harshit.setName("GARG");
         harshit.getName();
+        cellphone realme=new cellphone();
 
+        System.out.println(realme.call("ringing"));
+        square input=new square();
+        input.side=2;
+        System.out.println(input.parameter());
+        System.out.println(input.area());
+
+
+        rectangle inputs= new rectangle();
+        System.out.println(inputs.area(24,45));
+        System.out.println(inputs.perimeter(2,5));
+        circle value=new circle();
+        value.r=4;
+        System.out.println(value.area());
+        System.out.println(value.perimeter());
     }
 }
