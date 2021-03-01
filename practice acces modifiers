@@ -1,0 +1,44 @@
+package com.company;
+class student{
+    private int marks;
+    private int id;
+    private String name;
+    public void  setName(String name1)
+    {
+        name= name1;
+    }
+    public void  setId(int i)
+    {
+        id= i;
+    }
+    public void  setMarks(int m)
+    {
+        marks= m;
+    }
+    public int getId()
+    {
+        return id;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public int getMarks()
+    {
+        return marks;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        student harshit = new student();
+        harshit.setName("harshitGarg");
+        harshit.setId(16);
+        harshit.setMarks(90);
+        System.out.println(harshit.getId());
+        System.out.println(harshit.getName());
+        System.out.println(harshit.getMarks());
+
+    }
+}
