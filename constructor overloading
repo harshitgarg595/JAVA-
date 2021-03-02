@@ -1,0 +1,56 @@
+package com.company;
+class employee {
+    private int id;
+    private String name;
+
+
+    public employee()
+    {
+        id=45;
+        name="harshit";
+    }
+    public employee(int h){
+        id=h;
+    }
+    public employee(String myname){
+        name= myname;
+    }
+    public employee(int f,String myname){
+        id=f;
+        name= myname;
+    }
+
+    public void setId(int i)
+    {
+        id=i;
+    }
+    public void setName(String n)
+    {
+        name= n;
+
+    }
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+
+}
+public class Main {
+
+
+    public static void main(String[] args) {
+	//employee harry=new employee();
+	employee harshit = new employee(45,"garg");
+	System.out.println(harshit.getId());
+        System.out.println(harshit.getName());
+    }
+}
+
+
+
+
+
+
+
