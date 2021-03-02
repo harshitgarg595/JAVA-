@@ -1,0 +1,37 @@
+package com.company;
+class employee {
+     private int id;
+      private String name;
+
+
+    public employee()
+    {
+        id=45;
+        name="harshit";
+    }
+    public void setId(int i)
+    {
+        id=i;
+    }
+    public void setName(String n)
+    {
+        name= n;
+
+    }
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+        employee harry=new employee();
+        System.out.println(harry.getId());
+
+
+    }
+}
