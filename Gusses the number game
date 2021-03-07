@@ -1,0 +1,65 @@
+package com.company;
+import java.util.Scanner;
+import java.util.Random;
+class game
+{
+    int number;
+
+    public int getNumberOfGussess() {
+        return numberOfGussess;
+    }
+
+    public void setNumberOfGussess(int numberOfGussess) {
+        this.numberOfGussess = numberOfGussess;
+    }
+
+    int userNumber;
+    public int numberOfGussess = 0;
+    public  game()
+  {
+      Random value=new Random();
+       number = value.nextInt(5);
+  }
+  public void UserInput()
+  {
+      System.out.println("guess a number");
+      Scanner sc=new Scanner(System.in);
+      userNumber= sc.nextInt();
+
+    }
+  public Boolean IsCorrectNumber(){
+        numberOfGussess++;
+      if(userNumber==number)
+      {
+          System.out.println("you gussed in "+numberOfGussess);
+          return true;
+      }
+      else if (userNumber>number)
+      {
+          System.out.println("too high");
+      }
+      else if(userNumber<number)
+      {
+          System.out.println("too low");
+      }
+          return false;
+  }
+
+
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        boolean b = false;
+        while (!b)
+        {
+            game round = new game();
+            round.UserInput();
+             b = round.IsCorrectNumber();
+            System.out.println(b);
+
+        }
+    }
+}
