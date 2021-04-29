@@ -1,0 +1,40 @@
+package com.company;
+
+class Employee{
+    int id,i;
+    String name,a;
+    char letter;
+    public void print(){
+        System.out.println("my name is "+name);
+        System.out.println("and my id is "+id);
+    }
+    public int getId(){
+        return id;
+
+    }
+    public String getName(){
+        return name;
+
+    }
+    public void setId(){
+        id=i;
+
+    }
+    public void setName(){
+        name=a;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("CUSTOM CLASS");
+        Employee harshit= new Employee();
+        harshit.name="garg";
+        harshit.id=500069602;
+        harshit.letter='a';
+        //harshit.print();
+        //System.out.println(harshit.letter);
+        System.out.println(harshit.getId());
+
+
+    }
+}
