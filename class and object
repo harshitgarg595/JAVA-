@@ -1,0 +1,108 @@
+package com.company;
+import java.util.Scanner;
+/*class Student{
+    String Name;
+    int Roll_no;
+}//
+class Triangle{
+    float s1,b,h,ans;
+    public float area(){
+        ans= b*h/2;
+        return ans;
+
+    }
+    public float parameter(){
+        return s1+b+h;
+    }
+}
+
+//class Rectangle{
+    int length, breadth;
+
+    public void rectangle(int l , int b){
+        length=l;
+        breadth=b;
+
+    }
+    public int getArea()
+    {
+        return length*breadth;
+
+    }
+    public int getPerimeter()
+    {
+      return 2*length*breadth;
+    }
+*/
+
+class Area
+{
+    int length, breadth ;
+    Area(int l, int b)
+    {
+        length=l;
+        breadth=b;
+    }
+
+    public int returnArea(){
+        return length*breadth;
+    }
+}
+class  Average{
+    int d;
+    public void setavg(int a,int b, int c)
+    {
+          d=(a+b+c)/3;
+    }
+    public int getavg(){
+        System.out.println("the avg of three numbers is "+d);
+         return d;
+
+    }
+
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+	//*Student obj1 = new Student();
+	//Student obj2 = new Student();
+	//obj1.Name="JOHN";
+        //obj1.Roll_no=45;
+        //obj2.Name="sam";
+        //obj2.Roll_no=14;
+
+        //System.out.println(obj1.Name+" and" +obj1.Roll_no);
+        //System.out.println(obj2.Name+ " and "+obj2.Roll_no);
+
+        //Triangle t1=new Triangle();
+        //t1.b=3;
+        //t1.h=4;
+        //t1.s1=5;
+        //System.out.println(t1.parameter());
+        //System.out.println(t1.area());
+
+//Rectangle a=new Rectangle();//
+//Rectangle b=new Rectangle();
+
+//a.rectangle(4,5);
+//b.rectangle(5,6);
+        //System.out.println(a.getArea());
+        //System.out.println(a.getPerimeter());
+
+        //System.out.println("enter the lenght and breadth ");
+        Scanner sc=new Scanner(System.in);
+        //int l= sc.nextInt();
+        //int b=sc.nextInt();
+        //Area rect1=new Area(l,b);
+        //System.out.println(rect1.returnArea());
+
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int c=sc.nextInt();
+        Average obj1=new Average();
+        obj1.setavg(a,b,c);
+        obj1.getavg();
+
+    }
+}
