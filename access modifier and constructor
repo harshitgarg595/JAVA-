@@ -1,0 +1,83 @@
+package com.company;
+
+class rectangle{
+    private int lenght , breadth;
+
+    public rectangle(){
+        lenght=4;
+        breadth=5;
+    }
+    public rectangle(int l, int b){
+        lenght=l;
+        breadth=b;
+    }
+
+    public int getLenght() {
+        return lenght;
+    }
+
+    public int getBreadth() {
+        return breadth;
+    }
+}
+
+
+
+class Cylinder {
+     int r, h;
+
+    public  Cylinder(int H, int R) {
+        h = H;
+        r = R;
+
+
+    }
+
+
+    /*
+        public void setHeight(int H){
+            h=H;
+        }
+
+        public int getHeight() {
+            return h;
+        }
+        public void setRadius(int R){
+            r=R;
+
+        }
+
+        public int getRadius() {
+            return r;
+        }*/
+
+        public double surfaceArea(){
+            return 2*Math.PI*r*r+2*3.14*r*h;
+
+
+        }
+        public double volume(){
+            return Math.PI*r*r*h;
+        }
+    }
+
+    public class Main {
+
+        public static void main(String[] args) {
+
+            Cylinder c1 = new Cylinder(12,9);
+        /*
+        c1.setHeight(12);
+        System.out.println(c1.getHeight());
+        c1.setRadius(9);
+        int a = c1.getRadius();
+        System.out.println(a);*/
+
+        System.out.println(c1.surfaceArea());
+        System.out.println(c1.volume());
+         rectangle r1= new rectangle();
+            System.out.println(r1.getBreadth());
+            System.out.println(r1.getLenght());
+
+        }
+    }
